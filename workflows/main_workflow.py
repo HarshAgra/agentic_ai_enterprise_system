@@ -1,4 +1,4 @@
-from utils.llm_client import call_llm
+from agentic_ai_enterprise_system.utils.llm_client import call_llm
 from utils.retriever import load_pdf_text, get_context
 
 from agents.orchestrator import orchestrator_prompt
