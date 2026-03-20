@@ -1,5 +1,11 @@
 from workflows.main_workflow import route_query
 
+import sys
+import os
+
+sys.path.append(os.path.dirname(os.path.abspath(__file__)))
+
+import streamlit as st
 
 def main():
     print("=== Agentic AI System: Project Pragna ===")
