@@ -9,7 +9,7 @@ from agents.procurement_agent import procurement_prompt
 from utils.retriever import load_pdf_text, get_context
 
 
-pdf_pages = load_pdf_text("data\Project Pragna at Surya Motors Limited.pdf")
+pdf_pages = load_pdf_text("data/pragna_case.pdf")
 
 
 def route_query(query: str) -> str:
