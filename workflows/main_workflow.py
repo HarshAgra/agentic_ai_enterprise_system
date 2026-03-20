@@ -6,6 +6,7 @@ from agents.support_agent import support_prompt
 from agents.hr_agent import hr_prompt
 from agents.finance_agent import finance_prompt
 from agents.procurement_agent import procurement_prompt
+from agentic_ai_enterprise_system.utils.llm_client import call_llm
 
 
 pdf_pages = load_pdf_text("data\Project Pragna at Surya Motors Limited.pdf")
