@@ -15,3 +15,15 @@ client = AzureOpenAI(
 )
 
 DEPLOYMENT_NAME = deployment
+
+
+def call_llm(system_prompt, user_input):
+    response = client.chat.completions.create(
+        model=DEPLOYMENT_NAME,
+        messages=[
+            {"role": "system", "content": system_prompt},
+            {"role": "user", "content": user_input}
+        ],
+        temperature=0
+    )
+    return response.choices[0].message.content.strip()
